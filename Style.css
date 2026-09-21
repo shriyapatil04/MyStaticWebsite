@@ -1,0 +1,1041 @@
+/* =================================================
+   GENERAL
+================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff7fa;
+    color: #4a3b40;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =================================================
+   NAVIGATION BAR - LIGHT PINK
+================================================= */
+
+.navbar {
+    background-color: #f3b6c6;
+    padding: 17px 0;
+    min-height: 72px;
+}
+
+.navbar-brand {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white !important;
+}
+
+.navbar-brand span {
+    font-size: 25px;
+    margin-left: 4px;
+}
+
+.navbar-nav {
+    gap: 28px;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    padding: 5px 0 !important;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffeaf0 !important;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: white;
+}
+
+
+/* =================================================
+   MAIN SECTION
+================================================= */
+
+.main-section {
+    min-height: calc(100vh - 72px);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    background-color: #fff7fa;
+
+    padding: 70px 0;
+}
+
+
+/* =================================================
+   PHOTO
+================================================= */
+
+.photo-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame {
+    width: 360px;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+
+    background-color: #fde7ee;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 35px rgba(220, 130, 155, 0.18);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+}
+
+
+/* =================================================
+   INTRODUCTION
+================================================= */
+
+.intro-column {
+    padding-left: 65px;
+    position: relative;
+    z-index: 2;
+}
+
+.little-intro {
+    font-size: 13px;
+    letter-spacing: 5px;
+
+    color: #d889a1;
+
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.intro-column h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 56px;
+    font-weight: 500;
+
+    color: #40343a;
+
+    margin-bottom: 12px;
+    line-height: 1.15;
+}
+
+.intro-column h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    color: #9a7884;
+
+    margin-bottom: 10px;
+}
+
+.college-name {
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    color: #b18d98;
+
+    margin-bottom: 25px;
+}
+
+
+/* =================================================
+   SMALL PINK LINE
+================================================= */
+
+.intro-line {
+    width: 45px;
+    height: 2px;
+
+    background-color: #ee9eb5;
+
+    margin-bottom: 25px;
+}
+
+
+/* =================================================
+   DESCRIPTION
+================================================= */
+
+.description {
+    max-width: 620px;
+
+    color: #806c74;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =================================================
+   BUTTON
+================================================= */
+
+.explore-button {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background-color: #efa6ba;
+
+    font-size: 14px;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+
+    border-radius: 4px;
+}
+
+.explore-button span {
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+.explore-button:hover {
+    background-color: #df879f;
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================================
+   DECORATIVE ELEMENTS
+================================================= */
+
+.decoration {
+    position: absolute;
+
+    color: #e9a4b9;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.star-one {
+    top: 45px;
+    left: 16%;
+    font-size: 22px;
+}
+
+.heart-one {
+    top: 120px;
+    right: 7%;
+    font-size: 27px;
+}
+
+.star-two {
+    bottom: 22%;
+    left: 8%;
+    font-size: 25px;
+}
+
+.heart-two {
+    top: 42%;
+    right: 16%;
+    font-size: 22px;
+}
+
+.diamond {
+    top: 55px;
+    right: 6%;
+    font-size: 22px;
+    transform: rotate(45deg);
+}
+
+
+/* =================================================
+   FOOTER
+================================================= */
+
+footer {
+    background-color: #f3b6c6;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 13px;
+}
+
+footer p {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 14px;
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 991px) {
+
+    .intro-column {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        margin-top: 50px;
+
+        text-align: center;
+    }
+
+    .little-intro {
+        letter-spacing: 3px;
+    }
+
+    .intro-column h1 {
+        font-size: 45px;
+    }
+
+    .intro-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .photo-frame {
+        width: 310px;
+        height: 390px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-nav {
+        gap: 5px;
+        margin-top: 15px;
+    }
+
+    .main-section {
+        padding: 50px 0;
+    }
+
+    .photo-frame {
+        width: 270px;
+        height: 350px;
+    }
+
+    .intro-column h1 {
+        font-size: 38px;
+    }
+
+    .intro-column h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .decoration {
+        display: none;
+    }
+}
+/* =================================================
+   PAGE 2 - MY PET
+================================================= */
+
+.pet-main-section {
+
+    min-height: calc(100vh - 72px);
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #fff7fa;
+
+    padding: 65px 0;
+}
+
+
+/* =================================================
+   PET INTRODUCTION
+================================================= */
+
+.pet-intro {
+
+    padding-left: 60px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.pet-intro h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    font-weight: 500;
+
+    color: #40343a;
+
+    margin-bottom: 10px;
+}
+
+
+.title-heart {
+
+    color: #e6a0b4;
+
+    font-size: 40px;
+}
+
+
+.pet-intro h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    color: #9a7884;
+
+    margin-bottom: 25px;
+}
+
+
+/* =================================================
+   PET DESCRIPTION
+================================================= */
+
+.pet-description {
+
+    max-width: 600px;
+
+    color: #806c74;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* =================================================
+   FAVOURITE THINGS
+================================================= */
+
+.favourite-title {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    color: #8e7079;
+
+    margin-top: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.favourite-list {
+
+    padding-left: 20px;
+
+    color: #8a777d;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+
+.favourite-list li::marker {
+
+    color: #dda0b3;
+}
+
+
+/* =================================================
+   PET PHOTO
+================================================= */
+
+.pet-photo-column {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.pet-photo-frame {
+
+    width: 350px;
+
+    height: 380px;
+
+    background-color: #fde7ee;
+
+    padding: 7px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 35px rgba(220, 130, 155, 0.18);
+
+    transform: rotate(1deg);
+
+    transition: 0.4s;
+}
+
+
+.pet-photo-frame:hover {
+
+    transform: rotate(0deg) scale(1.02);
+}
+
+
+.pet-photo {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 4px;
+
+    display: block;
+}
+
+
+/* =================================================
+   PAGE 2 DECORATIONS
+================================================= */
+
+.pet-decoration {
+
+    position: absolute;
+
+    color: #dda1b4;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.pet-flower {
+
+    top: 70px;
+
+    left: 19%;
+
+    font-size: 27px;
+}
+
+
+.pet-heart-top {
+
+    top: 55px;
+
+    left: 58%;
+
+    font-size: 24px;
+}
+
+
+.pet-star {
+
+    top: 100px;
+
+    right: 6%;
+
+    font-size: 23px;
+}
+
+
+.pet-heart-right {
+
+    bottom: 25%;
+
+    right: 7%;
+
+    font-size: 25px;
+}
+
+
+.pet-flower-bottom {
+
+    bottom: 12%;
+
+    left: 20%;
+
+    font-size: 25px;
+}
+
+
+/* =================================================
+   PAGE 2 RESPONSIVE
+================================================= */
+
+@media (max-width: 991px) {
+
+    .pet-intro {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+
+    .pet-intro h1 {
+
+        font-size: 45px;
+    }
+
+
+    .pet-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .favourite-list {
+
+        display: inline-block;
+
+        text-align: left;
+    }
+
+
+    .pet-photo-frame {
+
+        width: 310px;
+
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .pet-main-section {
+
+        padding: 50px 0;
+    }
+
+
+    .pet-intro h1 {
+
+        font-size: 38px;
+    }
+
+
+    .pet-intro h2 {
+
+        font-size: 21px;
+    }
+
+
+    .pet-photo-frame {
+
+        width: 270px;
+
+        height: 320px;
+    }
+
+
+    .pet-decoration {
+
+        display: none;
+    }
+
+}
+/* =================================================
+   PAGE 3 - LUCKY'S FUN TIME
+================================================= */
+
+.activity-section {
+
+    min-height: calc(100vh - 72px);
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #fff7fa;
+
+    padding: 65px 0;
+}
+
+
+/* ================= PHOTO ================= */
+
+.activity-photo-column {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.activity-photo-frame {
+
+    width: 320px;
+
+    height: 390px;
+
+    padding: 7px;
+
+    background-color: #fde7ee;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 35px rgba(220, 130, 155, 0.18);
+
+    transform: rotate(-1deg);
+
+    transition: 0.4s;
+}
+
+
+.activity-photo-frame:hover {
+
+    transform: rotate(0deg) scale(1.02);
+}
+
+
+.activity-photo {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    display: block;
+}
+
+
+/* ================= TEXT ================= */
+
+.activity-text {
+
+    padding-left: 55px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.activity-text h1 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    font-weight: 500;
+
+    color: #40343a;
+
+    margin-bottom: 10px;
+}
+
+
+.activity-text h1 span {
+
+    color: #e6a0b4;
+
+    font-size: 40px;
+}
+
+
+.activity-text h2 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    color: #9a7884;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.activity-description {
+
+    max-width: 600px;
+
+    color: #806c74;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+
+/* ================= LUCKY LOVES ================= */
+
+.lucky-loves-title {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #9b7884;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.lucky-list {
+
+    padding-left: 20px;
+
+    color: #806c74;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+.lucky-list li::marker {
+
+    color: #d99caf;
+}
+
+
+/* ================= DECORATIONS ================= */
+
+.activity-decoration {
+
+    position: absolute;
+
+    color: #dda1b4;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.activity-flower {
+
+    top: 50px;
+
+    left: 18%;
+
+    font-size: 27px;
+}
+
+
+.activity-star {
+
+    top: 55px;
+
+    left: 58%;
+
+    font-size: 22px;
+}
+
+
+.activity-heart {
+
+    top: 120px;
+
+    right: 7%;
+
+    font-size: 27px;
+}
+
+
+.activity-star-two {
+
+    bottom: 25%;
+
+    right: 12%;
+
+    font-size: 23px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .activity-photo-column {
+
+        margin-bottom: 45px;
+    }
+
+
+    .activity-text {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+
+        text-align: center;
+    }
+
+
+    .activity-text h1 {
+
+        font-size: 45px;
+    }
+
+
+    .activity-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .lucky-list {
+
+        display: inline-block;
+
+        text-align: left;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .activity-section {
+
+        padding: 50px 0;
+    }
+
+
+    .activity-photo-frame {
+
+        width: 280px;
+
+        height: 340px;
+    }
+
+
+    .activity-text h1 {
+
+        font-size: 38px;
+    }
+
+
+    .activity-text h2 {
+
+        font-size: 21px;
+    }
+
+
+    .activity-decoration {
+
+        display: none;
+    }
+
+}
